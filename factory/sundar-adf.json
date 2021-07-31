@@ -1,0 +1,9 @@
+{
+	"name": "sundar-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b8e925b4-9f2f-4d7e-8059-eba0099691e8",
+		"tenantId": "f127f563-4a75-4906-a91f-ee4dc958aeca"
+	}
+}
