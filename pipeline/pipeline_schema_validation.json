@@ -127,6 +127,10 @@
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pipeline1",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			},
