@@ -1,0 +1,23 @@
+{
+	"name": "datasetblobstorageopt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blobLinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "one.txt",
+				"folderPath": "output",
+				"container": "ssscontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

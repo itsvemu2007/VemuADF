@@ -1,0 +1,23 @@
+{
+	"name": "datasetblobstoage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blobLinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "one.txt",
+				"folderPath": "input",
+				"container": "ssscontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
