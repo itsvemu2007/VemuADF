@@ -92,6 +92,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"tablename": {
+				"type": "string",
+				"defaultValue": "emp"
+			}
+		},
 		"annotations": []
 	}
 }
