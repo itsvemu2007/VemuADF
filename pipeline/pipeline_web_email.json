@@ -1,5 +1,5 @@
 {
-	"name": "pipeline2",
+	"name": "pipeline_web_email",
 	"properties": {
 		"activities": [
 			{

@@ -1,5 +1,5 @@
 {
-	"name": "pipeline_schema_validation",
+	"name": "pipeline_ifelse_schema_validation",
 	"properties": {
 		"activities": [
 			{
@@ -142,7 +142,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "pipeline1",
+						"referenceName": "pipeline_df_aggrigate",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
