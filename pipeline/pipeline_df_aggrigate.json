@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "dataflow1",
+				"name": "dataflow_aggrigate",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
