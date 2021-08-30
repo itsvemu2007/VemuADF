@@ -1,0 +1,9 @@
+{
+	"name": "vemuadfdev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4f7c8833-205d-4ea8-aa79-0e12a74a4423",
+		"tenantId": "5f07c1ea-80ae-4346-8817-d9694b7a2950"
+	}
+}
