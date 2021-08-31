@@ -5,8 +5,19 @@
 			"referenceName": "restapi",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"CountryName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@concat('https://restcountries.eu/rest/v2/name/', dataset().CountryName)",
+				"type": "Expression"
+			}
+		},
 		"schema": []
 	}
 }

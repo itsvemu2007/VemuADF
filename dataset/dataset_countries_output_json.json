@@ -1,0 +1,28 @@
+{
+	"name": "dataset_countries_output_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_ls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"CountryName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat(dataset().CountryName, '.json')",
+					"type": "Expression"
+				},
+				"folderPath": "restcountries",
+				"container": "config"
+			}
+		},
+		"schema": {}
+	}
+}
