@@ -3,7 +3,18 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage_ls",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"abc": {
+					"value": "@dataset().ds_storageaccount",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"ds_storageaccount": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
