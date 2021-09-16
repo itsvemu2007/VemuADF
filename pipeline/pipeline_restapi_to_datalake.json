@@ -28,7 +28,13 @@
 					},
 					"dataset": {
 						"referenceName": "dataset_countries",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_storageaccount": {
+								"value": "@pipeline().parameters.pipeline_storageaccount",
+								"type": "Expression"
+							}
+						}
 					},
 					"firstRowOnly": false
 				}
@@ -125,6 +131,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"pipeline_storageaccount": {
+				"type": "string",
+				"defaultValue": "vemuazurestorageaccount"
+			}
+		},
 		"annotations": []
 	}
 }
