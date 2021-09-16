@@ -1,6 +1,5 @@
 {
 	"name": "AzureBlobStorage_ls",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"parameters": {
 			"abc": {
@@ -10,8 +9,8 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"connectionString": "DefaultEndpointsProtocol=https;AccountName=@{linkedService().abc};EndpointSuffix=core.windows.net;",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlZFTVVBREZERVZfZDVlZjNkOTQtOGMyMC00ZmFjLTlkN2YtNTI5NjkwOTc2Nzc1Ig0KfQ=="
+			"serviceEndpoint": "@{concat('https://',linkedService().abc,'.blob.core.windows.net')}"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
